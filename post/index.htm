@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Kendea-Reportお便りフォーム</title>
+</head>
+<body>
+    <div class="hero has-background-warning mb-5">
+        <div class="hero-body">
+            <p class="title has-text-info">Kendea-Report お便りフォーム</p>
+            <p class="sub-title">Podcast番組Kendea-Reportへのお便りフォームです。<br>
+                【出演】<br>
+                ・Kendea(https://kendea1221.github.io) <br>              
+                <menu></menu>
+                ◆Spotify <br>
+                <a href="https://spoti.fi/3D7GtHW">https://spoti.fi/3D7GtHW</a> <br>
+                <menu></menu>
+                ◆Anchor <br>
+                <a href="https://anchor.fm/Kendea-Report">https://anchor.fm/Kendea-Report</a><br>
+
+                <span class="has-text-danger">赤文字は必須です!</span>
+            </p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeF2N1eL6HQbVBBvgt8qS8KKcqHuGME4rYAzNKJxWmTVfXTeA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+            <label class="has-text-danger">メールアドレス</label>
+            <input type="email" name="entry.1965408400" id="" class="input mb-5">
+
+            <label class="has-text-danger">メールアドレス(確認)</label>
+            <input type="email" name="entry.862294064" id="" class="input mb-5">
+
+            <label class="has-text-danger">ラジオネーム(匿名可)</label>
+            <input type="text" name="entry.847938562" id="" class="input mb-5">
+
+            <label>ラジオネーム(読み仮名)</label>
+            <input type="text" name="entry.393081966" id="" class="input mb-5">
+
+            <label class="has-text-danger">コーナー</label>
+            <input type="text" name="entry.1218204548" id="" class="input mb-5">
+
+            <label class="has-text-danger">コメント</label>
+            <textarea name="entry.809791829" id="" class="input m-7 mb-5" cols="30" rows="10" style="resize: none; width: max; height: 50px;"></textarea>
+
+            <button type="submit" class="button m-5 has-background-info is-size-large">送信</button>
+        </form>
+
+        <script type="text/javascript">
+            var submitted = false;
+        </script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted)  {window.location='thanks.html';}"></iframe>
+    </div>
+</body>
+</html>
